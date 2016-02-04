@@ -46,3 +46,11 @@ In eclipse -> tomcat server -> content.xml -> add following line:
 ```
 <Loader loaderClass="co.paralleluniverse.comsat.tomcat.QuasarWebAppClassLoader" />
 ```
+
+# Findings on performance
+Unfortunately the Fibers were not found to have impacted any postively when tested from JMeter(server capped to 50 threads and JMeter test running 3000 users). The response was exactly same as javax.faces.webapp.FacesServlet upto 500 users. For 3000 users, the error rate of the requests failure was almost the same and the response time was higher than normal FacesServlet.
+
+If you happen to work on this thread further and have any better results, please contact me Sanket Sangwikar (sanketsw@au1.ibm.com)
+
+
+
