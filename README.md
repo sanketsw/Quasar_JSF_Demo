@@ -5,6 +5,8 @@ Comsat project helps integrate Quasar Fibers with Servlets
 This project was an attempt to evaluate if using Fibers helps JSF capability and service asynchrounous calls. Ability to do this will help leverage advanced JQuery UI libraries like Primefaces with asynchronous calls like Node
 This would actually mean a new trend in UI space with Java development.
 
+More details on Comsat and Quasar at http://docs.paralleluniverse.co/comsat/
+
 # Strategy
 JSF demo project created here uses its own ComsatFacesServlet instread of javax.faces.webapp.FacesServlet 
 It extends HttpFiberServlet but preserves all the functionality of FacesServlet
